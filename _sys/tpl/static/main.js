@@ -145,7 +145,7 @@ function menuShow() {
     });
     $('#slider-rotate').slider({
         slide: function (event, ui) {
-            var currentRotate = (+true-1 + ui.value) * 3.8;
+            var currentRotate = (+true-1 + ui.value) * (-~-~-~$+.8);
             $(img).rotate(currentRotate);
         },
         change: stopMenu
