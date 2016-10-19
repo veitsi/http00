@@ -1,0 +1,28 @@
+{
+  "name": "tvstyle",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/d-jam/tvstyle.git"
+  },
+  "author": "tati_kl",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/d-jam/tvstyle/issues"
+  },
+  "homepage": "https://github.com/d-jam/tvstyle#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.3.7",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-concat-css": "^2.3.0",
+    "gulp-postcss": "^6.1.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp.spritesmith": "^6.2.1"
+  }
+}

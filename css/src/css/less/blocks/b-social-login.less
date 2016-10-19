@@ -1,0 +1,36 @@
+.b-social-login {
+  margin-left: 50px;
+  padding-left: 50px;
+  border-left: 1px solid #ccc;
+  white-space: nowrap;
+
+  &__header {
+    margin-top: 50px;
+  }
+
+  &-icons {
+    margin: 26px 0 70px;
+    font-size: 0;
+
+    &__item {
+      display: inline-block;
+
+      & + & {
+        margin-left: 15px;
+      }
+    }
+  }
+
+  &__hint {
+    display: inline-block;
+  }
+
+  &__link {
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  &__hint + &__link {
+    margin-left: 6px;
+  }
+}

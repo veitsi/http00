@@ -1,0 +1,68 @@
+.b-nav {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+
+  &:first-child {
+    padding-left: 118px;
+  }
+
+  &__logo {
+    position: absolute;
+    z-index: 99;
+    left: 0;
+    width: 78px;
+    height: 17px;
+    margin: 18px;
+    background: url('../img/tvstyle_logo.png') no-repeat;
+  }
+
+  &-list {
+    margin: 0;
+    padding: 0;
+    font-size: 0; /* inline-block fix */
+    list-style: none;
+  }
+
+  &__item {
+    display: inline-block;
+    color: #fff;
+    font: 400 14px/52px "Open Sans", sans-serif;
+    vertical-align: top;
+    padding: 0 10px;
+
+    & + & {
+      margin-left: 40px;
+    }
+  }
+
+  &__badge {}
+
+  &__link {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+
+    &:hover,
+    &:active {
+      color: #fff;
+    }
+  }
+
+  &__button {
+    height: 52px;
+    border: none;
+    background-color: #26333f;
+    color: #fff;
+    font: 400 14px "Open Sans", sans-serif;
+
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+      color: #fff;
+      background-color: transparent;
+      border-color: transparent;
+    }
+  }
+}

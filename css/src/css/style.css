@@ -1,0 +1,289 @@
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*Header*/
+
+.header {
+  min-width: 960px;
+  height: 52px;
+  background-color: #26333f;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.header__logo {
+  width: 100px;
+  margin: 0;
+
+  float: left;
+}
+
+.header__logo--link {
+  color: #fff;
+  font: 700 25px/52px "PT Sans Narrow", sans-serif;
+  text-transform: uppercase;
+  display: inline-block;
+  width: 78px;
+  height: 17px;
+  background: url('../img/tvstyle_logo.png') no-repeat;
+}
+
+.header__logo--link:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navigation {
+  width: 480px;
+
+  float: left;
+}
+
+.nav {
+  margin: 0;
+  padding: 0;
+
+  font-size: 0; /* inline-block fix */
+  list-style: none;
+}
+
+.nav__item {
+  margin: 0 0 0 60px;
+  display: inline-block;
+  float: left;
+
+  color: #fff;
+  font: 400 14px/52px "Open Sans", sans-serif;
+  vertical-align: top;
+}
+
+.nav__link {
+  display: block;
+
+  color: #fff;
+  text-decoration: none;
+}
+
+.user-block {
+  float: right;
+}
+
+.user-block__dropdown {
+  height: 52px;
+  border: none;
+
+  background-color: #26333f;
+  color: #fff;
+  font: 400 14px "Open Sans", sans-serif;
+
+}
+.user-block__dropdown::before {
+  height: 30px;
+  width: 30px;
+
+  position: absolute;
+  top: 11px;
+  left: -40px;
+
+  background: url("../img/oval-1.png");
+  content: "";
+}
+
+.user-block__dropdown:hover, .user-block__dropdown:focus, .user-block__dropdown:active, .user-block__dropdown.active, .open>.dropdown-toggle.user-block__dropdown {
+  color: #fff;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.btn .user-block__caret {
+  margin-left: 5px;
+}
+
+
+/*Filters*/
+
+.filters {
+  margin: 0 0 31px;
+}
+
+.filters__headline {
+  margin: 30px 0 32px;
+
+  font: 600 16px/20px "Open Sans", sans-serif;
+}
+
+.form-group {
+  margin: 0 20px 0 21px;
+  display: inline-block;
+}
+
+.filters__date {
+  width: 120px;
+  height: 30px;
+  border: solid 1px #cccccc;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 0 0 #ececec;
+
+  background-color: #f7f7f7;
+  font: 400 12px/14px "Open Sans", sans-serif;
+}
+
+.filters__date::before {
+  height: 17px;
+  width: 50px;
+
+  position: absolute;
+  top: -20px;
+  left: 38px;
+
+  content: "По дате";
+  color: #999;
+  font: 400 12px "Open Sans", sans-serif;
+}
+
+.dropdown {
+  display: inline-block;
+}
+
+.dropdown-user::before {
+   height: 17px;
+   width: 50px;
+
+   position: absolute;
+   top: -20px;
+   left: 0;
+
+   content: "По типу";
+   color: #999;
+   font: 400 12px "Open Sans", sans-serif;
+ }
+
+.dropdown-status::before {
+  height: 17px;
+  width: 70px;
+
+  position: absolute;
+  top: -20px;
+  left: 0;
+
+  content: "По статусу";
+  color: #999;
+  font: 400 12px "Open Sans", sans-serif;
+}
+
+.filters__dropdown {
+  width: 141px;
+  height: 30px;
+  margin: 0 20px 0 0;
+  border: solid 1px #ccc;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 0 0 #ececec;
+
+  background-color: #fff;
+  font: 400 12px "Open Sans", sans-serif;
+}
+
+.filters__name {
+  width: 142px;
+  height: 30px;
+  margin: 0 20px 0 0;
+  border: solid 1px #ccc;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 0 0 #ececec;
+
+  background-color: #fff;
+  vertical-align: middle;
+}
+
+.dropdown-status::after {
+  height: 17px;
+  width: 70px;
+
+  position: absolute;
+  top: -20px;
+  left: 165px;
+
+  content: "Как зовут";
+  color: #999;
+  font: 400 12px "Open Sans", sans-serif;
+}
+
+.filters__btn {
+  width: 140px;
+  height: 30px;
+  border-radius: 3px;
+
+  background-color: #5cb85c;
+  font: 600 14px "Open Sans", sans-serif;
+}
+
+/*.btn .filters__caret {*/
+  /*margin: 0 0 0 5px;*/
+/*}*/
+
+
+/*Table*/
+
+.list {
+  margin: 0 0 30px;
+}
+
+.table__avatar {
+  margin: 0 8px 0 0;
+}
+
+.pagination {
+  margin: 0;
+}
+
+/*Bootstrap styles*/
+
+.badge {
+  margin-left: 5px;
+
+  background-color: #e1011c;
+}
+
+.nav>li>a {
+  padding: 0;
+}
+
+.nav>li>a:hover, .nav>li>a:focus {
+  background-color: transparent;
+}
+
+.btn:focus, .btn:active:focus, .btn.active:focus {
+  outline: none;
+}
+
+.form-inline {
+  position: relative;
+}
+
+.btn {
+  padding: 0;
+}
+
+.table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td {
+  vertical-align: baseline;
+}
+
+.table {
+  margin-bottom: 0;
+}
+
+/*DataTables Styles*/
+
+div.dataTables_wrapper div.dataTables_paginate {
+  text-align: center;
+}
+
+
+

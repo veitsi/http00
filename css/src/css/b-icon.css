@@ -1,0 +1,84 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-arrow-down {
+  background-image: url(../img/icons.png);
+  background-position: -80px -73px;
+  width: 7px;
+  height: 4px;
+}
+.icon-external-link {
+  background-image: url(../img/icons.png);
+  background-position: -40px -61px;
+  width: 14px;
+  height: 12px;
+}
+.icon-eye {
+  background-image: url(../img/icons.png);
+  background-position: -80px -62px;
+  width: 16px;
+  height: 11px;
+}
+.icon-facebook {
+  background-image: url(../img/icons.png);
+  background-position: -40px 0px;
+  width: 40px;
+  height: 40px;
+}
+.icon-fb {
+  background-image: url(../img/icons.png);
+  background-position: -60px -40px;
+  width: 20px;
+  height: 21px;
+}
+.icon-insta {
+  background-image: url(../img/icons.png);
+  background-position: -80px -42px;
+  width: 20px;
+  height: 20px;
+}
+.icon-pin {
+  background-image: url(../img/icons.png);
+  background-position: -80px -21px;
+  width: 20px;
+  height: 21px;
+}
+.icon-pinterest {
+  background-image: url(../img/icons.png);
+  background-position: 0px -40px;
+  width: 40px;
+  height: 40px;
+}
+.icon-twit {
+  background-image: url(../img/icons.png);
+  background-position: -80px 0px;
+  width: 20px;
+  height: 21px;
+}
+.icon-vk {
+  background-image: url(../img/icons.png);
+  background-position: -40px -40px;
+  width: 20px;
+  height: 21px;
+}
+.icon-vkontakte {
+  background-image: url(../img/icons.png);
+  background-position: 0px 0px;
+  width: 40px;
+  height: 40px;
+}

@@ -1,0 +1,134 @@
+
+.wrapper {
+    min-width: 980px;
+    margin: 0 auto;
+    background-color: aliceblue;
+}
+#canvas {
+    width: 550px;
+    height: 550px;
+    position: relative;
+    background-color: #fff;
+}
+#canvas div {
+    overflow: hidden;
+}
+
+#canvas .opacity {
+    opacity: 1;
+    background-color: transparent;
+    border: none;
+}
+
+#canvas img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto
+}
+
+#del_issue {
+    background-color: lightgrey;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.tools-item {
+    width: 120px;
+    height: 120px;
+    display: inline-block;
+    /*background-color: white;*/
+    /*border: 1px black solid;*/
+}
+
+.tools-item img {
+    max-width: 120px;
+    max-height: 120px;
+}
+
+.look-item {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+}
+
+/*li {*/
+/*height: 38px;*/
+/*}*/
+#right-side li a {
+    font-size: 10px;
+}
+
+a {
+    color: #000;
+    font-size: 15px;
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+
+#active {
+    border-bottom: 1px solid white;
+}
+
+/*#canvas .dropHover {*/
+/*background-color: #0a001f;*/
+/*}*/
+
+.cell {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border: black solid 1px;
+}
+#collection-template {
+    height: 100%;
+    background-color: white;
+}
+#collection-template .list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#collection-template .list-item {
+    display: inline-block;
+    height: 110px;
+    width: 110px;
+    margin: 10px 0 0 10px;
+    vertical-align: top;
+    text-align: center;
+    font-size: 0;
+}
+
+#collection-template .list-item:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+#collection-template .list-item-image {
+    max-width: 76px;
+    max-height: 76px;
+    vertical-align: middle;
+}
+
+#collection-template div {
+    display: inline-block;
+    border: 1px dashed;
+    width: 120px;
+    height: 210px;
+}
+
+
+#empty-template {
+    position: relative;
+    height: 100%;
+    background-color: whitesmoke;
+}
+#empty-template div{
+    position: absolute;
+    width: 150px;
+    margin: 0;
+    display: inline-block;
+}

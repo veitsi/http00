@@ -1,0 +1,83 @@
+.b-popup {
+  position: absolute;
+  top: 120px;
+  left: 0;
+  right: 0;
+  padding: 30px 64px 52px 84px;
+  height: auto;
+  max-width: 630px;
+  margin: auto;
+  background-color: #fff;;
+  transition: height ease .3s;
+  overflow: hidden;
+  box-sizing: border-box;
+
+  &.is-hidden {
+    height: 0;
+    transition: height ease .3s;
+    visibility: hidden;
+  }
+
+  &__text {
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  &__header {
+    margin-bottom: 30px;
+    color: #263340;
+    text-align: center;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 21px;
+    font-family: PT Serif, sans-serif;
+    line-height: 1.5;
+  }
+
+  &-content {
+    display: flex;
+  }
+
+  &__close {
+    position: absolute;
+    top: 10px;
+    right: 8px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+
+    &:before,
+    &:after {
+      position: absolute;
+      top: 8px;
+      right: 0;
+      width: 24px;
+      height: 2px;
+      background-color: #ccc;
+      content: '';
+    }
+
+    &:before {
+      transition: transform linear .3s;
+      transform: rotate(45deg);
+    }
+
+    &:after {
+      transition: transform linear .3s;
+      transform: rotate(-45deg);
+    }
+
+    &:hover {
+
+      &:before {
+        transition: transform linear .3s;
+        transform: rotate(-135deg);
+      }
+
+      &:after {
+        transition: transform linear .3s;
+        transform: rotate(135deg);
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+.b-form {
+
+  &-item {
+    position: relative;
+    width: 144px;
+    display: inline-block;
+
+    & + & {
+      margin-left: 20px;
+    }
+
+    &-button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      width: 30px;
+      border: 1px solid #ccc;
+      background: white;
+      border-radius: 0 3px 3px 0;
+      text-align: center;
+      white-space: nowrap;
+      font-size: 0;
+      z-index: 1;
+
+      &:before {
+        content: '';
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+      }
+
+      &__icon {
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+  }
+
+  &_vertical &-item {
+    display: block;
+    margin-top: 10px;
+    width: 100%;
+    margin-left: 0;
+
+    & + & {
+      margin-left: 0;
+    }
+  }
+
+  &_horizontal {}
+}

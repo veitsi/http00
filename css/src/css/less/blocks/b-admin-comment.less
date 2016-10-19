@@ -1,0 +1,22 @@
+.b-admin-comment {
+  margin-bottom: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+
+  &-form {
+
+    &__label {
+      font-weight: normal;
+    }
+  }
+
+  &__textarea {
+    height: 132px;
+    &:extend(.b-textarea);
+
+    &:disabled {
+      background-color: #f7f7f7;
+      color: #9b9b9b;
+    }
+  }
+}

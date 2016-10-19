@@ -1,0 +1,10 @@
+{
+  "name": "tvabric",
+  "homepage": "https://github.com/veitsi/tvabric",
+  "authors": [
+    "pydev <xtfkpi@gmail.com>"
+  ],
+  "description": "",
+  "main": "main.js",
+  "license": "MIT"
+}

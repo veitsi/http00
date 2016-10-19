@@ -1,0 +1,53 @@
+.b-button {
+  display: inline-block;
+  width: 100%;
+  padding: 8px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: #428bca;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  color: #fff;
+
+  &_ad {     //this modifier is used only in cabinet
+    padding: 6px 12px;
+    border-radius: 4px;
+    width: auto;
+  }
+
+  &_red {
+    background-color: @red;
+    transition: background-color linear .3s;
+    box-shadow: 0 1px 0 0 #ab0217;
+
+    &:hover {
+      background-color: darken(@red, 5%);
+      transition: background-color linear .3s;
+    }
+  }
+
+  &_green {
+    background-color: #11c208;
+    transition: background-color linear .3s;
+    box-shadow: 0 1px 0 0 #0f9508;
+
+    &:hover {
+      background-color: darken(#11c208, 5%);
+      transition: background-color linear .3s;
+    }
+  }
+
+  &_disabled {
+    background-color: #dddddd;
+    color: #000;
+  }
+}

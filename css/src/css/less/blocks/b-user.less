@@ -1,0 +1,65 @@
+.b-user {
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  &-view {
+    padding: 20px 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+
+  &-avatar {
+    display: inline-block;
+    overflow: hidden;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+
+    &__image {
+      max-width: 100%;
+    }
+  }
+
+  &-caption {
+    margin-top: 10px;
+
+    &__item {
+      font-size: 12px;
+    }
+  }
+
+  &__header {
+    margin-bottom: 10px;
+    font: @header_font;
+    font-weight: bold;
+  }
+
+  &-data {
+
+    &-social {
+      font-size: 0;
+
+      &__link {
+        display: inline-block;
+
+        & + & {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+
+  &-addons {
+
+    &__textarea {
+      height: 222px;
+      &:extend(.b-textarea);
+
+      &:disabled {
+        background-color: #f7f7f7;
+        color: #9b9b9b;
+      }
+    }
+  }
+}
